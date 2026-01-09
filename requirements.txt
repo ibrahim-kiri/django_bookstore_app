@@ -11,3 +11,4 @@ python-dotenv==1.2.1
 setuptools==69.5.1
 sqlparse==0.5.4
 wheel==0.43.0
+pillow==12.1.0
