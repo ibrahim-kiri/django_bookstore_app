@@ -13,6 +13,12 @@ services:
     environment:
       - DJANGO_SECRET_KEY=django-insecure-iz$#nwhm7%d%_wm!y!(i=7ia58_-8z$c9e&89hsbgnlx4*_op
       - DJANGO_DEBUG=True
+      - DJANGO_SECURE_SSL_REDIRECT=False
+      - DJANGO_SECURE_HSTS_SECONDS=0
+      - DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS=False
+      - DJANGO_SECURE_HSTS_PRELOAD=False
+      - DJANGO_SESSION_COOKIE_SECURE=False
+      - DJANGO_CSRF_COOKIE_SECURE=False
 
   db:
     image: postgres:16
