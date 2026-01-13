@@ -13,3 +13,5 @@ sqlparse==0.5.4
 wheel==0.43.0
 pillow==12.1.0
 django-debug-toolbar==6.1.0
+whitenoise==6.11.0
+gunicorn==23.0.0

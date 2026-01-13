@@ -3,7 +3,7 @@ version: "5.0"
 services:
   web:
     build: .
-    command: python3 /django-prof/manage.py runserver 0.0.0.0:8000
+    command: gunicorn django_project.wsgi -b 0.0.0.0:8000
     volumes:
       - .:/django-prof
     ports:
